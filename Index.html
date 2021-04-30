@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="CSS/destyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="circle">
+
+        </div>
+        <header>
+            <a href="#" class="logo"><img src="sturbacks/logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+               <h2>It's not just Coffee <br> It's <span>Sturbacks</span></h2>
+               <p>We’re working hard to put the health and well-being of our partners and customers first in <br>
+                all that we do.Embrace creamy coffee bliss with our new Pistachio Latte and Pistachio Frappuccino® blended beverage.
+
+            </p>
+            <a href="#">Learn more</a>
+            </div>
+            <div class="imgBox">
+             <img src="sturbacks/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+          <li><img src="sturbacks/thumb1.png" onclick="imgSlider('sturbacks/img1.png');changeCircleColor('#017143')"> </li>
+          <li><img src="sturbacks/thumb2.png" onclick="imgSlider('sturbacks/img2.png');changeCircleColor('#d752b1')"> </li>
+          <li><img src="sturbacks/thumb3.png" onclick="imgSlider('sturbacks/img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+<li><a href="#"><img src="sturbacks/facebook.png"></a></li>
+<li><a href="#"></a><img src="sturbacks/twitter.png"></li>
+<li><a href="#"><img src="sturbacks/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+    function imgSlider(anything)
+    {
+        document.querySelector('.starbucks').src = anything;
+    }
+    function changeCircleColor(color) {
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+        </script>
+</body>
+</html>
